@@ -1,0 +1,78 @@
+/* By default position is static */
+
+body{
+    width: auto;
+    height: 100%;
+    background: white;
+    margin: 20pxS;
+}
+
+.parent{
+    width: 15rem;
+    height: AUTO;
+    background:rgb(220, 188, 235);
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin:auto; */
+    padding: 0.5rem;
+    /* top:2rem;
+    left:2rem; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.child-one{
+
+    /* notes about relative position */
+    /* Relative help you shift with left | right | Top | Bottom 
+       It results in over flow of element*/
+    /* position: relative;  
+    left:5rem; */
+     /* WE can prevent over flow of a child div by using overflow hidden in parent */
+    
+     /*  Notes for position absolute */
+
+     /* position absolute completely removes element from document flow and render over thing same as nothing has happend.
+     set size of div equal to size of content in it then place that div in reference parent parent 
+     in this case div overlaps over other div because of read by line nature of compiler of brower */
+ 
+     position: absolute;
+ 
+     /* Uncomment below if you want to see absolute work with relative position of parent */
+     /* top:0px; */
+
+     /* positon absolute is used with parent when you want to place a child with in a container at some exact location
+     You set you parent to relative and set posistion of child to absolute */
+    
+     margin: 0.3rem;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    background-color: rgb(83, 115, 255);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.child-two{
+    margin: 0.3rem;
+    padding: 0.3rem;
+    display: block;
+    font-size: 1.5rem;
+    height: 5rem;
+    background-color: rgb(103, 255, 82);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.child-three{
+    margin: 0.3rem;
+    padding: 0.3rem;
+    display: block;
+    font-size: 1.5rem;
+    width: auto;
+    height: 5rem;
+    background-color: rgb(255, 97, 105);
+    border: 1px solid white;
+    border-radius: 5px;
+}
