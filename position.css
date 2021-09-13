@@ -2,12 +2,22 @@
 
 /* By default position is static */
 
+
+    /* Center anything in an countainer */
+    
+
 body{
     /* size set to one view page */
-    width: 100vw;
-    height: 100vh;
+    width:auto;
+    height: auto;
     background: white;
     margin: 20pxS;
+}
+
+
+img{
+    width: 100vw;
+    height: auto;
 }
 
 .parent{
@@ -15,27 +25,69 @@ body{
     height: AUTO;
 
     background:rgb(230, 127, 153);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+
+    
     padding:2rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
 
 
-    /* Center anything in an countainer */
-    position: absolute;
+   
+   /* 
+   TO understand relative property of parent uncomment below code
+   */
+
+    /* 
+    
+    margin:auto; 
+    position: relative;
+    /* top:2rem;
+    left:2rem; 
+    
+    */
+
+
+    /* To prevent any  */
+    /* 
+    overflow: hidden;
+    */
+
+    /*     
+
+    In sticky position situation our container stay sticked to one positon and does not follow us around through out the page 
+    to understand this process un comment below code
+
+    */
+
+    /*
+     position: sticky; 
+    */
+
+
+    /*  
+    As per name fixed position fixes our container at a particular position and that container stays 
+    at location through out layout of page.
+    
+    P.S : BY DEFAULT ITS LOCATION IS TOP AS LIKE ANY OTHER POSITION TYPE THIS PROPERTY IS USED 
+    NORMALLY FOR NAVIGATION BARS IN WEBSTITES BASED ON REQUIREMENTS 
+    
+    You can also use top, bottom, left, right properties in this 
+
+    To understand this process un comment below code
+    */
+
+      
+    position: fixed;
+
+
     top: 50%;
     left: 50%;
     transform:  translate(-50%,-50%);
 
 
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 0.5rem;
-    /* margin:auto; 
-    position: relative;
-    /* top:2rem;
-    left:2rem; */
-    /* overflow: hidden; */
-    
 }
 
 .child-one{
